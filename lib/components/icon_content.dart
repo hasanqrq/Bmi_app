@@ -1,3 +1,4 @@
+import 'package:bmi_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class IconContent extends StatelessWidget {
@@ -14,14 +15,16 @@ class IconContent extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(iconOfGender),
+        Icon(
+          iconOfGender,
+          size: 80,
+        ),
         const SizedBox(
           height: 15,
         ),
-        Text(
-          labelOfGender,
-          style: const TextStyle(fontSize: 18, color: Color(0xff8d8e99)),
-        ),
+        Text(labelOfGender,style: kLabelTextStyle,)
+
+       
       ],
     );
   }
